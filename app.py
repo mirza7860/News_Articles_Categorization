@@ -1,11 +1,7 @@
-import os
 import streamlit as st
 from gradio_client import Client
 
-HF_TOKEN = os.environ.get("HF_TOKEN")
-
-client = Client("mssab/News_Articles_Categorization",
-                hf_token=HF_TOKEN)
+client = Client("mssab/News_Categorization")
 
 st.title("News Article Categorization")
 st.write("Drop your articles here to categorize them.")
